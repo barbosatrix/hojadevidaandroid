@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_registro"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/datos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mensaje_registro"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20sp"/>
+
+
+        <EditText
+            android:id="@+id/nombreUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombreHint"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="text"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/docUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/documentoHint"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/edadUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edadHint"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/direccionUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/direccionHint"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/telUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefonoHint"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registrar"
+            android:background="@color/colorPrimary"
+            android:onClick="Registrar"
+
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/Siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/siguiente"
+            android:background="@color/colorAccent"
+            android:onClick="Siguiente"
+
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

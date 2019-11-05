@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">HojadeVida4</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_registro">RegistroActivity</string>
+    <string name="titulo_registro">FORMULARIO DE REGISTRO</string>
+    <string name="mensaje_registro">Registre datos reales de su usuario, al diligenciar el formulario usted acepta los temrinos y condiciones asociadas al uso de la aplicaciòn</string>
+    <string name="nombreHint">Nombre</string>
+    <string name="documentoHint">Documento</string>
+    <string name="direccionHint">Direccion</string>
+    <string name="edadHint">Edad</string>
+    <string name="telefonoHint">Telèfono</string>
+    <string name="registrar">Registrar</string>
+    <string name="estudios">ESTUDIOS</string>
+    <string name="institucion">Institucion</string>
+    <string name="fecha_del_grado">Fecha del Grado</string>
+    <string name="titulo_obtenido">Titulo Obtenido</string>
+    <string name="agregar">Agregar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="experiencia_laboral">EXPERIENCIA LABORAL</string>
+    <string name="cargo">Cargo</string>
+    <string name="empresa">Empresa</string>
+    <string name="fecha_de_inicio">Fecha de inicio</string>
+    <string name="fecha_de_finalizacion">Fecha de Finalización</string>
+    <string name="referencias_personales">REFERENCIAS PERSONALES</string>
+    <string name="parentesco">Parentesco</string>
+    <string name="telefono">Telefono</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="referencias_familiares">REFERENCIAS FAMILIARES</string>
+    <string name="atras">Atras</string>
+    <string name="instituto">Instituto</string>
+</resources>

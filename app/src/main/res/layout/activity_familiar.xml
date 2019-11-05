@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FamiliarActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/referencias_familiares"
+                android:layout_marginBottom="20dp"
+                android:layout_margin="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/nombreReferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombreHint"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="text"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/parentezco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/parentesco"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="text"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/telefonoReferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefono"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="date"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/agregarReferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agregar"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/Siguiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/atras"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorAccent"
+                    android:onClick="Siguiente"
+                    />
+
+                <Button
+                    android:id="@+id/Finalizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finalizar"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorAccent"
+                    android:onClick="Siguiente"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

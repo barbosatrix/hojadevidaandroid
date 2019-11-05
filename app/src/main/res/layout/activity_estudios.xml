@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstudiosActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estudios"
+                android:layout_marginBottom="20dp"
+                android:layout_margin="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/nombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/nombreTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/titulo_obtenido"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="text"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/institucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/institucion"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:id="@+id/instituto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/instituto"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/graduacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fecha_del_grado"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="date"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/agregarEstudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agregar"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <Button
+                android:id="@+id/Siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/siguiente"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorAccent"
+                android:onClick="Siguiente"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

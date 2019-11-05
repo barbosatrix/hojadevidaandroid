@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="institutos">
+        <item>Seleccione</item>
+        <item>Universidad Cooperativa</item>
+        <item>ECCI</item>
+        <item>Los Libertadores</item>
+        <item>Javeriana</item>
+    </string-array>
+
+</resources>
