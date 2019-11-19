@@ -2,10 +2,18 @@ package com.example.hojadevida4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
+
+import com.example.hojadevida4.entidades.ConexionSQLiteHelper;
+import com.example.hojadevida4.utilidades.Utilidades;
 
 public class RegistroActivity extends AppCompatActivity {
 
@@ -16,15 +24,41 @@ public class RegistroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
-        nombre = (EditText)findViewById(R.id.nombreUsuario);
+        nombre    = (EditText)findViewById(R.id.nombreUsuario);
         documento = (EditText)findViewById(R.id.docUsuario);
-        edad = (EditText)findViewById(R.id.edadUsuario);
+        edad      = (EditText)findViewById(R.id.edadUsuario);
         direccion = (EditText)findViewById(R.id.direccionUsuario);
-        telefono = (EditText)findViewById(R.id.telUsuario);
+        telefono  = (EditText)findViewById(R.id.telUsuario);
 
     }
 
-    public void Registrar(View view) {
+    public void onClick(View view){
+
+        registrarUsuarios( );
+
+
+    }
+
+    public void registrarUsuarios() {
+
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"bd_usuarios",null,1);
+
+        SQLiteDatabase db = conn.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+
+        values.put(Utilidades.CAMPO_ID,     documento.getText().toString() );
+        values.put(Utilidades.CAMPO_NOMBRE, nombre.getText().toString() );
+        values.put(Utilidades.CAMPO_EDAD,   edad.getText().toString() );
+        values.put(Utilidades.CAMPO_DIRECCION,direccion.getText().toString() );
+        values.put(Utilidades.CAMPO_TELEFONO,telefono.getText().toString() );
+
+        Long idResultante = db.insert(Utilidades.TABLA_USUARIO,Utilidades.CAMPO_ID,values);
+
+        Toast.makeText(getApplicationContext(),"ID Registro"+idResultante, Toast.LENGTH_LONG).show();
+
+
+
     }
 
     public void Siguiente(View view) {
