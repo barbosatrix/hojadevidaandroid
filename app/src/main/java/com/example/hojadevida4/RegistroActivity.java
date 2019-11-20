@@ -57,7 +57,21 @@ public class RegistroActivity extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(),"ID Registro"+idResultante, Toast.LENGTH_LONG).show();
 
+    }
 
+    //Metodo para registrar por medio de sentencias SQL Normales
+    private void registrarUsuariosSql(){
+
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"bd_usuarios",null,1);
+
+        SQLiteDatabase db = conn.getWritableDatabase();
+
+        String insert="insert into "+Utilidades.TABLA_USUARIO+"("+Utilidades.CAMPO_ID+","+Utilidades.CAMPO_NOMBRE+" ,"+Utilidades.CAMPO_TELEFONO+
+                ") values('"+documento.getText().toString()+"','"+nombre.getText().toString()+"','"+telefono.getText().toString()+"' ) ";
+
+        db.execSQL(insert);
+
+        db.close();
 
     }
 

@@ -9,17 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FamiliarActivity"></activity>
+        <activity android:name=".PerfilesRecyclerView.RecyclerActivity"></activity>
+        <activity android:name=".FamiliarActivity" />
         <activity android:name=".PersonalActivity" />
         <activity android:name=".LaboralActivity" />
         <activity android:name=".EstudiosActivity" />
-        <activity android:name=".RegistroActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".RegistroActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
